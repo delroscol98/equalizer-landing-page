@@ -1,0 +1,36 @@
+:root {
+  --color-blue: #66e2dc;
+  --color-orange: #fa7453;
+  --color-gold: #ffb964;
+  --color-white: #fcfaf9;
+  --color-black: #191826; }
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../../assets/bg-main-desktop.png);
+  background-size: cover;
+  background-position: -1rem -1rem; }
+  @media screen and (max-width: 50em) {
+    body {
+      background-image: url(../../assets/bg-main-tablet.png);
+      background-position: -15rem -15rem; } }
+  @media screen and (max-width: 31.25em) {
+    body {
+      background-image: url(../../assets/bg-main-mobile.png);
+      background-position: 20rem -20rem; } }
