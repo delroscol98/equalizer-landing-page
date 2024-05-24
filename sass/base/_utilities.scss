@@ -1,0 +1,11 @@
+.u-margin-LR {
+  margin: 0 2.4rem;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin: 0 4rem;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    margin: 0 16.5rem;
+  }
+}

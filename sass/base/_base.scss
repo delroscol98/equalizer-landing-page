@@ -15,16 +15,16 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: var(--color-white);
-  background-image: url(../../assets/bg-main-desktop.png);
+  background-image: url(../../assets/bg-main-mobile.png);
   background-size: cover;
-  background-position: -15rem -15rem;
+  background-position: 7rem -17rem;
 
-  @media screen and (max-width: $bp-tablet) {
+  @media screen and (min-width: $bp-tablet) {
     background-image: url(../../assets/bg-main-tablet.png);
+    background-position: -15rem -15rem;
   }
 
-  @media screen and (max-width: $bp-phone) {
-    background-image: url(../../assets/bg-main-mobile.png);
-    background-position: 20rem -20rem;
+  @media screen and (min-width: $bp-desktop) {
+    background-image: url(../../assets/bg-main-desktop.png);
   }
 }

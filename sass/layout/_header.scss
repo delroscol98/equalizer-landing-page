@@ -1,0 +1,50 @@
+.header {
+  display: grid;
+  gap: 6.4rem;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 9.5rem;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    gap: 12.7rem;
+  }
+
+  &__img {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: inline;
+      position: absolute;
+      height: 40rem;
+      right: -4rem;
+      top: -4rem;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      right: 0;
+    }
+  }
+
+  &__logo {
+    margin-top: 4rem;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 6.2rem;
+    }
+  }
+
+  &__text {
+    display: grid;
+    gap: 2rem;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: calc(min(87rem, 64.25vw));
+      gap: 2.8rem;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 4rem;
+    }
+  }
+}

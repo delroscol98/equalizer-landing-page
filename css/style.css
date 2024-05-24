@@ -14,7 +14,7 @@ body {
   line-height: 1; }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.25vw, 2rem);
   line-height: 1.7; }
 
 *,
@@ -32,13 +32,59 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: var(--color-white);
-  background-image: url(../../assets/bg-main-desktop.png);
+  background-image: url(../../assets/bg-main-mobile.png);
   background-size: cover;
-  background-position: -15rem -15rem; }
-  @media screen and (max-width: 50em) {
+  background-position: 7rem -17rem; }
+  @media screen and (min-width: 27em) {
     body {
-      background-image: url(../../assets/bg-main-tablet.png); } }
-  @media screen and (max-width: 31.25em) {
+      background-image: url(../../assets/bg-main-tablet.png);
+      background-position: -15rem -15rem; } }
+  @media screen and (min-width: 49em) {
     body {
-      background-image: url(../../assets/bg-main-mobile.png);
-      background-position: 20rem -20rem; } }
+      background-image: url(../../assets/bg-main-desktop.png); } }
+
+.u-margin-LR {
+  margin: 0 2.4rem; }
+  @media screen and (min-width: 27em) {
+    .u-margin-LR {
+      margin: 0 4rem; } }
+  @media screen and (min-width: 49em) {
+    .u-margin-LR {
+      margin: 0 16.5rem; } }
+
+.header {
+  display: grid;
+  gap: 6.4rem; }
+  @media screen and (min-width: 27em) {
+    .header {
+      gap: 9.5rem; } }
+  @media screen and (min-width: 49em) {
+    .header {
+      gap: 12.7rem; } }
+  .header__img {
+    display: none; }
+    @media screen and (min-width: 27em) {
+      .header__img {
+        display: inline;
+        position: absolute;
+        height: 40rem;
+        right: -4rem;
+        top: -4rem; } }
+    @media screen and (min-width: 49em) {
+      .header__img {
+        right: 0; } }
+  .header__logo {
+    margin-top: 4rem; }
+    @media screen and (min-width: 27em) {
+      .header__logo {
+        margin-top: 6.2rem; } }
+  .header__text {
+    display: grid;
+    gap: 2rem; }
+    @media screen and (min-width: 27em) {
+      .header__text {
+        width: calc(min(87rem, 64.25vw));
+        gap: 2.8rem; } }
+    @media screen and (min-width: 27em) {
+      .header__text {
+        gap: 4rem; } }
