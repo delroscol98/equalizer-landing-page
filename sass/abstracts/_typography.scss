@@ -8,7 +8,31 @@ body {
   line-height: 1;
 }
 
+.heading-2 {
+  font-size: clamp(3.2rem, 8.533vw, 4rem);
+  line-height: calc(40 / 32);
+}
+
 .paragraph {
   font-size: clamp(1.6rem, 2.25vw, 2rem);
   line-height: 1.7;
+}
+
+.paragraph-2 {
+  font-size: clamp(1.8rem, 4.8vw, 2rem);
+  line-height: calc(28 / 18);
+}
+
+.paragraph-3 {
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  span {
+    font-size: 6.5rem;
+    font-weight: 700;
+  }
 }

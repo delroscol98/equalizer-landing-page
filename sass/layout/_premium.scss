@@ -1,0 +1,50 @@
+.premium {
+  position: relative;
+  &__phone {
+    @include centerHorizontal;
+
+    height: 43rem;
+  }
+
+  &__background {
+    height: 60rem;
+    background: var(--color-black);
+    border-radius: 1.2rem;
+
+    &--img {
+      @include centerHorizontal;
+
+      height: 42rem;
+    }
+  }
+
+  &__EQ {
+    padding: 4.8rem 3.6rem;
+    background: var(--color-orange);
+    border-radius: 1.2rem;
+    color: var(--color-white);
+    display: grid;
+    gap: 3.2rem;
+
+    &--text {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    &--btns {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      &-IOS {
+        background-color: var(--color-black);
+        color: var(--color-white);
+      }
+
+      &-android {
+        background-color: var(--color-white);
+        color: var(--color-black);
+      }
+    }
+  }
+}
