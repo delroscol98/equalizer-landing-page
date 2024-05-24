@@ -1,6 +1,8 @@
 .header {
   display: grid;
   gap: 6.4rem;
+  position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: $bp-tablet) {
     gap: 9.5rem;

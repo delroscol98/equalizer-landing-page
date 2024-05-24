@@ -72,7 +72,10 @@ body {
       margin: 0 16.5rem; } }
 
 .u-margin-top {
-  margin-top: 6.8rem; }
+  margin-top: 16.6rem; }
+  @media screen and (min-width: 27em) {
+    .u-margin-top {
+      margin-top: 24.9rem; } }
 
 .u-padding-top {
   padding-top: 0.4rem; }
@@ -90,7 +93,9 @@ body {
 
 .header {
   display: grid;
-  gap: 6.4rem; }
+  gap: 6.4rem;
+  position: relative;
+  overflow: hidden; }
   @media screen and (min-width: 27em) {
     .header {
       gap: 9.5rem; } }
@@ -131,23 +136,70 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 43rem; }
+    height: 43rem;
+    position: absolute;
+    top: -9.8rem;
+    z-index: 2; }
+    @media screen and (min-width: 27em) {
+      .premium__phone {
+        transform: translateY(0);
+        left: 9.7rem;
+        top: -13.8rem;
+        height: 55.6rem; } }
+    @media screen and (min-width: 49em) {
+      .premium__phone {
+        left: calc(min(19.931vw, 28.7rem));
+        top: -21.3rem;
+        height: 64.2rem; } }
   .premium__background {
     height: 60rem;
     background: var(--color-black);
-    border-radius: 1.2rem; }
+    border-radius: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; }
+    @media screen and (min-width: 27em) {
+      .premium__background {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90.625%; } }
+    @media screen and (min-width: 49em) {
+      .premium__background {
+        width: 77.083%; } }
     .premium__background--img {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       height: 42rem; }
+      @media screen and (min-width: 27em) {
+        .premium__background--img {
+          top: -3.1rem;
+          left: 37.2rem; } }
+      @media screen and (min-width: 49em) {
+        .premium__background--img {
+          left: calc(min(34.792vw, 50.1rem)); } }
   .premium__EQ {
     padding: 4.8rem 3.6rem;
     background: var(--color-orange);
     border-radius: 1.2rem;
     color: var(--color-white);
     display: grid;
-    gap: 3.2rem; }
+    gap: 3.2rem;
+    position: absolute;
+    top: 38rem;
+    z-index: 3; }
+    @media screen and (min-width: 27em) {
+      .premium__EQ {
+        padding: 4.8rem;
+        width: 39.9rem;
+        top: 15rem;
+        left: 27.2rem; } }
+    @media screen and (min-width: 49em) {
+      .premium__EQ {
+        top: 9rem;
+        width: calc(min(30.972vw, 44.6rem));
+        left: calc(min(50.972vw, 73.4rem)); } }
     .premium__EQ--text {
       display: grid;
       gap: 1.2rem; }

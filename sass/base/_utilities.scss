@@ -11,7 +11,11 @@
 }
 
 .u-margin-top {
-  margin-top: 6.8rem;
+  margin-top: 16.6rem;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: 24.9rem;
+  }
 }
 
 .u-padding-top {
