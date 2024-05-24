@@ -9,6 +9,14 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: clamp(4rem, 8vw, 8.8rem);
+  line-height: 1; }
+
+.paragraph {
+  font-size: 2rem;
+  line-height: 1.7; }
+
 *,
 *::after,
 *::before {
@@ -34,35 +42,3 @@ body {
     body {
       background-image: url(../../assets/bg-main-mobile.png);
       background-position: 20rem -20rem; } }
-
-.u-margin-left {
-  margin-left: 16.5rem; }
-  @media screen and (max-width: 50em) {
-    .u-margin-left {
-      margin-left: 3.9rem; } }
-  @media screen and (max-width: 31.25em) {
-    .u-margin-left {
-      margin-left: 2.4rem; } }
-
-.u-padding-top {
-  padding-top: 6rem; }
-
-.header {
-  display: inline-block;
-  width: 81.95%;
-  min-width: 32.7rem; }
-  .header__img {
-    position: absolute;
-    right: 0;
-    top: -4rem; }
-    @media screen and (max-width: 50em) {
-      .header__img {
-        height: 40rem;
-        right: -4rem; } }
-    @media screen and (max-width: 31.25em) {
-      .header__img {
-        display: none; } }
-  .header__logo-box {
-    display: block; }
-  .header__logo {
-    width: auto; }
