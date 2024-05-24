@@ -1,2 +1,13 @@
 .header {
+  display: inline-block;
+  width: 81.95%;
+  min-width: 32.7rem;
+
+  &__logo-box {
+    display: block;
+  }
+
+  &__logo {
+    width: auto;
+  }
 }

@@ -1,0 +1,15 @@
+.u-margin-left {
+  margin-left: 16.5rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-left: 3.9rem;
+  }
+
+  @media screen and (max-width: $bp-phone) {
+    margin-left: 2.4rem;
+  }
+}
+
+.u-padding-top {
+  padding-top: 6rem;
+}

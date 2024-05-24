@@ -14,13 +14,13 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   position: relative;
+  background-color: var(--color-white);
   background-image: url(../../assets/bg-main-desktop.png);
   background-size: cover;
-  background-position: -1rem -1rem;
+  background-position: -15rem -15rem;
 
   @media screen and (max-width: $bp-tablet) {
     background-image: url(../../assets/bg-main-tablet.png);
-    background-position: -15rem -15rem;
   }
 
   @media screen and (max-width: $bp-phone) {
