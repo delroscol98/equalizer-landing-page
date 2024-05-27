@@ -11,3 +11,12 @@
 .premium__EQ--btns-android:hover {
   background-color: var(--color-gold);
 }
+
+.footer__socials svg {
+  transition: all 0.2s;
+}
+
+.footer__socials svg:hover {
+  fill: var(--color-orange);
+  cursor: pointer;
+}

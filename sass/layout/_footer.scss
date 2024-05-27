@@ -46,5 +46,9 @@
     @media screen and (min-width: $bp-tablet) {
       align-items: center;
     }
+
+    &--icon {
+      fill: var(--color-black);
+    }
   }
 }

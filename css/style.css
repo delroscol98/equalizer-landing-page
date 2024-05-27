@@ -47,6 +47,13 @@ body {
 .premium__EQ--btns-android:hover {
   background-color: var(--color-gold); }
 
+.footer__socials svg {
+  transition: all 0.2s; }
+
+.footer__socials svg:hover {
+  fill: var(--color-orange);
+  cursor: pointer; }
+
 *,
 *::after,
 *::before {
@@ -143,6 +150,8 @@ body {
     @media screen and (min-width: 27em) {
       .footer__socials {
         align-items: center; } }
+    .footer__socials--icon {
+      fill: var(--color-black); }
 
 .header {
   display: grid;
