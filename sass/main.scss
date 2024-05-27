@@ -2,10 +2,12 @@
 @import "abstracts/variables";
 @import "abstracts/typography";
 
+@import "base/animation";
 @import "base/base";
 @import "base/utilities";
 
 @import "components/button";
 
+@import "layout/footer";
 @import "layout/header";
 @import "layout/premium";

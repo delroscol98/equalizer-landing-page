@@ -36,6 +36,17 @@ body {
     font-size: 6.5rem;
     font-weight: 700; }
 
+.premium__EQ--btns-IOS,
+.premium__EQ--btns-android {
+  transition: all 0.2s; }
+
+.premium__EQ--btns-IOS:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white); }
+
+.premium__EQ--btns-android:hover {
+  background-color: var(--color-gold); }
+
 *,
 *::after,
 *::before {
@@ -45,6 +56,9 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media screen and (min-width: 91em) {
+    html {
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box;
@@ -89,7 +103,46 @@ body {
   justify-content: center;
   gap: 0.8rem;
   font-weight: 700;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  cursor: pointer; }
+
+.footer {
+  position: relative;
+  top: 34rem;
+  width: 87.2%;
+  margin: 0 auto;
+  padding: 6.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem; }
+  @media screen and (min-width: 27em) {
+    .footer {
+      top: 18.3rem; } }
+  @media screen and (min-width: 49em) {
+    .footer {
+      flex-direction: row;
+      gap: calc(min(9.583vw, 13.8rem));
+      top: 20.2rem;
+      width: 77.083%; } }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem; }
+    @media screen and (min-width: 27em) {
+      .footer__text {
+        flex-direction: row;
+        gap: 20rem; } }
+  .footer__logo {
+    height: 3.2rem; }
+  .footer__paragraph {
+    font-size: 1.6rem;
+    line-height: 1.7; }
+  .footer__socials {
+    display: flex;
+    gap: 2rem; }
+    @media screen and (min-width: 27em) {
+      .footer__socials {
+        align-items: center; } }
 
 .header {
   display: grid;

@@ -1,0 +1,13 @@
+.premium__EQ--btns-IOS,
+.premium__EQ--btns-android {
+  transition: all 0.2s;
+}
+
+.premium__EQ--btns-IOS:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.premium__EQ--btns-android:hover {
+  background-color: var(--color-gold);
+}
